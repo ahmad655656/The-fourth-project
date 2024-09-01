@@ -6,48 +6,48 @@ import { CgScreen, CgWebsite } from "react-icons/cg";
 import { MdDraw, MdSports, MdSportsFootball, MdSportsRugby, MdStyle } from "react-icons/md";
 import photo1 from "../../assest/MyPhoto/1-removebg-preview.png";
 import Slider, { SliderMark } from "@mui/material/Slider";
-import { Box, Grid, Grid2 } from "@mui/material";
+import { Box, Container, Grid, Grid2 } from "@mui/material";
 import { BiMusic } from "react-icons/bi";
 import { FcSportsMode } from "react-icons/fc";
 export default function Home() {
   return (
-    <div className="w-[100vw] min-h-[350vh] flex flex-col items-center gap-[40px] ">
+    <div className="w-full min-h-[350vh] flex flex-col items-center gap-[40px] ">
       <div className="flex flex-row sm:max-md:flex-col sm:max-md:items-center  items-center relative w-full sm:max-md:h-[100vh] min-h-[72vh]">
-        <div className="w-[40%] pl-[50px] sm:max-md:pl-0 flex flex-col items-start sm:max-md:items-center sm:max-md:w-full text-center gap-[10px] ">
-          <h6 className="text-[35px] sm:max-md:text-[20px] font-semibold">
+        <Box className="w-[40%] pl-[50px] sm:max-md:pl-0 flex flex-col items-start lg:max-xlg:items-start sm:max-md:items-center sm:max-md:w-full text-center gap-[10px] ">
+          <h6 className="text-[35px] sm:max-md:text-[15px] lg:max-xlg:text-[30px] font-semibold">
             For Create Website Or Editing
           </h6>
-          <h2 className="text-[50px] sm:max-md:text-[30px] font-extrabold text-mainTextColor">
+          <h2 className="text-[50px] lg:max-xlg:text-[35px] sm:max-md:text-[30px] font-extrabold text-mainTextColor">
             Front-End Devloper
           </h2>
-          <h4 className="text-[40px] sm:max-md:text-[25px]">React Js</h4>
-        </div>
-        <div className="w-[50%] sm:max-md:after:h-0 sm:max-md:after:w-0 after:transition-all after:duration-1000  after:absolute after:bg-mainTextColor after:w-[50%] after:h-[50%] after:left-[705px] after:mix-blend-soft-light after:z-[1] after:top-0 before:absolute before:bg-mainTextColor before:w-[20.1%] before:h-full before:left-[1320px] before:mix-blend-multiply before:z-[1] before:top-0 h-full">
+          <h4 className="text-[40px] lg:max-xlg:text-[30px] sm:max-md:text-[25px]">React Js</h4>
+        </Box>
+        <Container className="w-[50%] sm:max-xlg:after:h-0 sm:max-xlg:before:h-0 sm:max-xlg:before:w-0 sm:max-xlg:after:w-0 after:transition-all after:duration-1000  after:absolute after:bg-mainTextColor after:w-[50%] after:h-[50%] after:left-[785px] max-xlg:after:left-[668px] after:mix-blend-soft-light after:z-[1] after:top-0 before:absolute before:bg-mainTextColor before:w-[22.9%] before:h-full before:left-[1340px] max-xlg:before:left-[1170px] before:mix-blend-multiply before:z-[1] before:top-0 h-full">
           <img
             src={photo1}
             alt=""
             className="w-[40%] sm:max-md:ml-0 sm:max-md:w-full ml-[500px] z-[3] m-auto h-full border-[0.5px] border-dotted border-shadowColor "
           />
-        </div>
+        </Container>
       </div>
-      <div className="flex flex-row sm:max-md:flex sm:max-md:flex-wrap sm:max-md:gap-[40px] sm:max-md:p-[30px] sm:max-md:items-center sm:max-md:w-full min-h-[100vh] bg-smallSection w-full items-center">
-        <div className="pl-[50px] pt-[100px] sm:max-md:w-full w-[30%] h-[80%] gap-[30px] flex-col items-center">
+      <div className="flex flex-row sm:max-md:flex sm:max-md:flex-wrap lg:max-xlg:flex-wrap lg:max-xlg:gap-[40px]  sm:max-md:gap-[40px] sm:max-md:p-[30px] sm:max-md:items-center sm:max-md:w-full min-h-[100vh] bg-smallSection w-full items-center">
+        <div className="pl-[50px] pt-[100px] sm:max-md:w-full lg:max-xlg:items-center lg:max-xlg:w-full w-[30%] h-[80%] gap-[30px] flex-col items-center">
           <h6 className="text-[30px] sm:max-md:text-[20px] text-mainTextColor ">Our Services</h6>
           <h2 className="text-[50px] sm:max-md:text-[30px] font-black ">What We do?</h2>
           <hr className="w-[100px] h-[5px] bg-mainTextColor text-mainTextColor " />
-          <p className="opacity-35 text-[30px] sm:max-md:text-[20px] font-medium ">
+          <Box className="opacity-35 text-[30px] sm:max-md:text-[20px] font-medium ">
             If you want to design and develop websites, here is your best choice
             I have one year of experience in designing and developing websites
             using React js/Next js Tailwind css
-          </p>
+          </Box>
           <Link to="/services">
             <button className="transition-all duration-300 ease-out after:transition-all after:duration-300 after:ease-out relative text-[30px] sm:max-md:text-[20px] p-[5px] mt-[50px] hover:after:w-full after:w-[30%] after:left-0 after:top-0 after:absolute after:mix-blend-screen after:h-full after:bg-mainTextColor border-t-[2px] border-l-[2px] border-solid border-mainTextColor ">
               View All Services
             </button>
           </Link>
         </div>
-        <Grid2 container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} className={"sm:max-md:w-full sm:max-md:p-[10px] w-[70%] h-[70%] flex flex-col items-center gap-[50px] mr-[20px]"}>
-          <Grid2 className={"flex-row items-center sm:max-md:items-center sm:max-md:w-full sm:max-md:flex-wrap flex gap-[30px] w-[90%] "}>
+        <Grid2 container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} className={"sm:max-md:w-full sm:max-md:p-[10px] lg:max-xlg:w-full lg:max-xlg:mr-0 w-[70%] h-[70%] flex flex-col items-center gap-[50px] mr-[20px]"}>
+          <Grid2 className={"flex-row items-center sm:max-md:items-center sm:max-md:w-full sm:max-md:flex-wrap lg:max-xlg:w-full lg:max-xlg:pl-[20px]  flex gap-[30px] w-[90%] "}>
             <CardService
               title={"Modify the code"}
               content={
@@ -65,7 +65,7 @@ export default function Home() {
               <CgWebsite className="w-[60px] h-[60px] border-[4px] border-solid border-mainTextColor p-[5px] hover:rotate-180 transition-all duration-500 ease-in-out " />
             </CardService>
           </Grid2>
-          <Grid2 className="flex-row items-center sm:max-md:flex-wrap sm:max-md:w-full sm:max-md:items-center flex gap-[10px] w-[90%] ">
+          <Grid2 className="flex-row items-center sm:max-md:flex-wrap sm:max-md:w-full sm:max-md:items-center lg:max-xlg:w-full lg:max-xlg:pl-[20px] flex gap-[10px] w-[90%] ">
             <CardService
               title={"Modify the site style"}
               content={
@@ -89,10 +89,10 @@ export default function Home() {
         <h2 className="ml-[40px] text-[40px] sm:max-md:text-[30px]  font-black text-mainTextColor ">
           My works gallery
         </h2>
-        <Box container className={"relative flex flex-row sm:max-md:flex-wrap  sm:max-md:pl-[40px] sm:max-md:gap-[100px] sm:max-md:pr-[40px] pl-[50px] pt-[30px] transition-all duration-1000 ease-in-out justify-center gap-[40px] items-center w-full min-h-full"}>
-          <Box className="sm:max-md:after:h-0 hover:after:h-0 transition-all after:ease-in-out after:duration-700 after:absolute after:w-[29.5%] after:h-[95%] after:rounded-[50px] after:bg-afterVideo after:opacity-65 flex flex-col sm:max-md:w-full w-[30%] min-h-[100vh] ">
+        <Box container className={"relative flex flex-row sm:max-lg:flex-wrap  sm:max-lg:pl-[40px] sm:max-lg:gap-[100px] sm:max-lg:pr-[40px] pl-[50px] pt-[30px] transition-all duration-1000 ease-in-out justify-center gap-[40px] items-center w-full min-h-full"}>
+          <Box className="sm:max-lg:after:h-0 hover:after:h-0 transition-all after:ease-in-out after:duration-700 after:absolute after:w-[29.5%] after:h-[95%] after:rounded-[50px] after:bg-afterVideo after:opacity-65 flex flex-col sm:max-lg:w-full w-[30%] min-h-[100vh] ">
             <iframe
-              className="rounded-[40px]  min-h-[50vh] w-full transition-all duration-1000 ease-in-out hover:border-b-[5px] pb-[30px] border-solid border-b-mainTextColor"
+              className="rounded-[40px] min-h-[50vh] w-full transition-all duration-1000 ease-in-out hover:border-b-[5px] pb-[30px] border-solid border-b-mainTextColor"
               src="https://www.youtube.com/embed/hw49S2kxssI?si=qGqAxTNs5Pz1JJgw"
               allow="accelerometer; autoplay; gyroscope; web-share; clipboard-write; picture-in-picture; encrypted-media"
               allowFullScreen
@@ -104,7 +104,7 @@ export default function Home() {
               allowFullScreen
             />
           </Box>
-          <Box className="sm:max-md:after:h-0 hover:after:h-0 transition-all after:ease-in-out after:duration-700 after:absolute after:w-[29.5%] after:h-[95%] after:rounded-[50px] after:bg-afterVideo after:opacity-65 flex flex-col  sm:max-md:w-full w-[30%] min-h-[90%]">
+          <Box className="sm:max-lg:after:h-0 hover:after:h-0 transition-all after:ease-in-out after:duration-700 after:absolute after:w-[29.5%] after:h-[95%] after:rounded-[50px] after:bg-afterVideo after:opacity-65 flex flex-col  sm:max-lg:w-full w-[30%] min-h-[90%]">
             <iframe
               className="rounded-[40px] min-h-[50vh] w-full transition-all duration-1000 ease-in-out hover:border-b-[5px] pb-[30px] border-solid border-b-mainTextColor"
               src={
@@ -114,7 +114,7 @@ export default function Home() {
               allowFullScreen
             />
             <iframe
-              className="rounded-[40px]  min-h-[50vh] w-full transition-all duration-1000 ease-in-out hover:border-b-[5px] pb-[30px] border-solid border-b-mainTextColor"
+              className="rounded-[40px] min-h-[50vh] w-full transition-all duration-1000 ease-in-out hover:border-b-[5px] pb-[30px] border-solid border-b-mainTextColor"
               src={
                 "https://www.youtube.com/embed/434qs4gfW1Q?si=CXyyuS2-CZyFCare"
               }
@@ -122,7 +122,7 @@ export default function Home() {
               allowFullScreen
             />
           </Box>
-          <Box className=" sm:max-md:after:h-0 hover:after:h-0 transition-all after:ease-in-out after:duration-700 after:absolute after:w-[29.5%] after:h-[47%] after:rounded-[50px] after:translate-y-[-480px] after:bg-afterVideo after:opacity-65 sm:max-md:w-full w-[30%] min-h-[30%] ">
+          <Box className=" sm:max-lg:after:h-0 hover:after:h-0 transition-all after:ease-in-out after:duration-700 after:absolute after:w-[29.5%] after:h-[47%] after:rounded-[50px] after:translate-y-[-480px] after:bg-afterVideo after:opacity-65 sm:max-lg:w-full w-[30%] min-h-[30%] ">
             <iframe
               className="rounded-[40px] min-h-[50vh] w-full transition-all duration-1000 ease-in-out hover:border-b-[5px] pb-[30px] border-solid border-b-mainTextColor"
               src={

@@ -7,15 +7,13 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { NaveBar } from "../../Data";
 import { Link } from 'react-router-dom';
-import { BiPhoneCall } from 'react-icons/bi';
 import { MdEmail } from 'react-icons/md';
+import { Sms } from '@mui/icons-material';
+import { FaSms } from 'react-icons/fa';
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -113,12 +111,13 @@ function ResponsiveAppBar() {
           </Box>
           <div className="max-xlg:flex sm:max-xlg:hidden flex flex-row gap-[50px] items-center w-[25%]">
         <div className="w-[50%] flex flex-col items-center ">
-          <BiPhoneCall className="text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
-          <h3 className="text-[20px]">+963-0983-796-029</h3>
-        </div>
-        <div className="w-[50%] flex flex-col items-center">
+          <Link to='sms:+963983796029'>
+          <FaSms className="text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
+          </Link>
+                  </div>
+      <div className="w-[50%] flex flex-col items-cente" onClick={() =>{  
+        window.location.href=`mailto:haedarahasan69@gmail.com?`}}>
           <MdEmail className="text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
-          <h3 className="text-[20px]">haedarahasan69@gmail.com</h3>
         </div>
             </div>
         </Toolbar>

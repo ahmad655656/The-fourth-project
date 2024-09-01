@@ -1,11 +1,11 @@
-import { Box, Button, ButtonBase, ButtonGroup, Fab } from "@mui/material";
+import { BottomNavigation, Box, Button} from "@mui/material";
 import React from "react";
 import { FaFacebook, FaTelegram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="w-full min-h-[70vh] flex flex-col bg-smallSection ">
+    <div className={"w-full min-h-[70vh] flex flex-col bg-smallSection"}>
       <div className="w-[90%] min-h-[200px] border-b-[3px] border-solid border-b-shadowColor sm:max-md:flex-wrap flex flex-row items-center justify-between mx-auto ">
         <div className="flex flex-row items-center gap-[10px] mr-[200px]">
           <img
@@ -28,10 +28,18 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-row gap-[20px]">
+          <Link to="https://www.facebook.com/HaedaraSalloum" >
           <FaFacebook className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
+          </Link>
+          <Link to="https://wa.me/963984906541">
           <FaWhatsapp className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
+          </Link>
+          <Link to='https://youtube.com/@haedarahasan8374?si=fvg1LPRpaRGoJvBG'>
           <FaYoutube className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
-          <FaTelegram className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
+          </Link>
+            <Link to="https://t.me/+963983796029">
+            <FaTelegram className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
+            </Link>
         </div>
       </div>
       <Box className={"flex flex-row w-[90%] m-auto "}>

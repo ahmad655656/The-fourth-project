@@ -8,7 +8,7 @@ import Services from './Pages/Services/Services';
 import Footer from './Sections/Footer/Footer';
 function App() {
   return (
-    <div className=" bg-mainBackground text-secondTextColor relative flex flex-col items-center justify-between w-full overflow-hidden min-h-[100vh]">
+    <div className=" bg-mainBackground text-secondTextColor relative flex flex-col items-center justify-between w-full m-auto overflow-hidden min-h-[100vh]">
       <Router>
         <SmallNavBar />
         <Routes>
