@@ -41,8 +41,8 @@ function ResponsiveAppBar() {
   return (
     <AppBar sx={{background: 'none', width: '100%', padding: '0px'}}  position="static">
       <Container maxWidth="x" sx={{padding: '10px', width: '100%', gap: '100px', padding: '0', height: '200px', display: 'flex', flexDirection: 'row',}}>
-        <Toolbar sx={{width: '100%', display: 'flex', justifyContent: 'space-between'}} disableGutters>
-        <div className="flex flex-row items-center gap-[10px] mr-[200px]">
+        <Toolbar sx={{width: '100%', display: 'flex', justifyContent: 'space-between'}}  disableGutters>
+        <div className="flex flex-row items-center gap-[10px]">
           <img
             src={
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqfacCQhC3h6m9skEvWk75mx4YV2_GxYJNfw&s"
@@ -62,7 +62,7 @@ function ResponsiveAppBar() {
             </h6>
           </div>
         </div>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -98,26 +98,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex' } }}>
+          <Box sx={{ display: {xs: 'none', md: 'flex' } }}>
             {NaveBar.map((page) => (
              <Link to={page.link}>
               <Button
