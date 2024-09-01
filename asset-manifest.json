@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/The-fourth-project/static/css/main.2252f6a1.css",
+    "main.js": "/The-fourth-project/static/js/main.f8e0e5cd.js",
+    "static/js/453.68693753.chunk.js": "/The-fourth-project/static/js/453.68693753.chunk.js",
+    "static/media/1-removebg-preview.png": "/The-fourth-project/static/media/1-removebg-preview.6ac3df5581bc2504fa22.png",
+    "index.html": "/The-fourth-project/index.html",
+    "main.2252f6a1.css.map": "/The-fourth-project/static/css/main.2252f6a1.css.map",
+    "main.f8e0e5cd.js.map": "/The-fourth-project/static/js/main.f8e0e5cd.js.map",
+    "453.68693753.chunk.js.map": "/The-fourth-project/static/js/453.68693753.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2252f6a1.css",
+    "static/js/main.f8e0e5cd.js"
+  ]
+}
