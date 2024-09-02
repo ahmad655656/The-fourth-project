@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/The-fourth-project/static/css/main.26187708.css",
-    "main.js": "/The-fourth-project/static/js/main.8a282082.js",
+    "main.css": "/The-fourth-project/static/css/main.fb0ed1e9.css",
+    "main.js": "/The-fourth-project/static/js/main.ab6e6cc2.js",
     "static/js/453.68693753.chunk.js": "/The-fourth-project/static/js/453.68693753.chunk.js",
     "static/media/2-removebg-preview.png": "/The-fourth-project/static/media/2-removebg-preview.8d523aa232e273b3f18f.png",
     "static/media/1-removebg-preview.png": "/The-fourth-project/static/media/1-removebg-preview.6ac3df5581bc2504fa22.png",
     "index.html": "/The-fourth-project/index.html",
-    "main.26187708.css.map": "/The-fourth-project/static/css/main.26187708.css.map",
-    "main.8a282082.js.map": "/The-fourth-project/static/js/main.8a282082.js.map",
+    "main.fb0ed1e9.css.map": "/The-fourth-project/static/css/main.fb0ed1e9.css.map",
+    "main.ab6e6cc2.js.map": "/The-fourth-project/static/js/main.ab6e6cc2.js.map",
     "453.68693753.chunk.js.map": "/The-fourth-project/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26187708.css",
-    "static/js/main.8a282082.js"
+    "static/css/main.fb0ed1e9.css",
+    "static/js/main.ab6e6cc2.js"
   ]
 }
