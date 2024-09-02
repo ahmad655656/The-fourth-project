@@ -22,7 +22,7 @@ export default function Home() {
           </h2>
           <h4 className="text-[40px] lg:max-xlg:text-[30px] sm:max-md:text-[25px]">React Js</h4>
         </Box>
-        <Container className="w-[50%] sm:max-xlg:after:h-0 sm:max-xlg:before:h-0 sm:max-xlg:before:w-0 sm:max-xlg:after:w-0 after:transition-all after:duration-1000  after:absolute after:bg-mainTextColor after:w-[50%] after:h-[50%] after:left-[785px] max-xlg:after:left-[668px] after:mix-blend-soft-light after:z-[1] after:top-0 before:absolute before:bg-mainTextColor before:w-[22.9%] before:h-full before:left-[1340px] max-xlg:before:left-[1170px] before:mix-blend-multiply before:z-[1] before:top-0 h-full">
+        <Container className="w-[50%] sm:max-lg:after:h-0 sm:max-lg:before:h-0 sm:max-lg:before:w-0 sm:max-lg:after:w-0 after:transition-all after:duration-1000  after:absolute after:bg-mainTextColor after:w-[50%] after:h-[50%] after:left-[785px] max-xlg:after:left-[628px] after:mix-blend-soft-light after:z-[1] after:top-0 before:absolute before:bg-mainTextColor max-xlg:before:w-[27%] before:w-[22.9%] before:h-full before:left-[1340px] max-xlg:before:left-[1000px] before:mix-blend-multiply before:z-[1] before:top-0 h-full">
           <img
             src={photo1}
             alt=""

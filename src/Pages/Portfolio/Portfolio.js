@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Portfolio() {
   return (
-       <Box container className={" hover:skew-x-12  relative flex flex-row sm:max-lg:flex-wrap  sm:max-lg:pl-[40px] sm:max-lg:gap-[100px] sm:max-lg:pr-[40px] pl-[50px] pt-[30px] transition-all duration-500 z-[1] ease-in-out justify-center gap-[40px] items-center w-full min-h-[100vh] p-[100px] "}>
+       <Box container className={"relative flex flex-row sm:max-lg:flex-wrap  sm:max-lg:pl-[40px] sm:max-lg:gap-[100px] sm:max-lg:pr-[40px] pl-[50px] pt-[30px] transition-all duration-500 z-[1] ease-in-out justify-center gap-[40px] items-center w-full min-h-[100vh] p-[100px] "}>
           <Box className=" flex flex-col sm:max-lg:w-full w-[30%] min-h-[100vh] ">
             <iframe
               className="rounded-[40px] min-h-[50vh] w-full transition-all duration-1000 ease-in-out hover:border-b-[5px] pb-[30px] border-solid border-b-mainTextColor"

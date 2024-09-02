@@ -12,7 +12,6 @@ import MenuItem from '@mui/material/MenuItem';
 import { NaveBar } from "../../Data";
 import { Link } from 'react-router-dom';
 import { MdEmail } from 'react-icons/md';
-import { Sms } from '@mui/icons-material';
 import { FaSms } from 'react-icons/fa';
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -121,9 +120,9 @@ function ResponsiveAppBar() {
              </Link>
             ))}
           </Box>
-          <div className="max-xlg:flex sm:max-xlg:hidden flex flex-row gap-[50px] translate-x-[200px] items-center w-[25%]">
+          <div className="max-xlg:flex sm:max-lg:hidden flex flex-row gap-[50px] translate-x-[200px] items-center w-[25%]">
           <Link to='sms:+963983796029'>
-          <FaSms className="animate-animatioPhoto text-[15px] rounded-[50%] rotate-90 transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
+          <FaSms className="animate-animatioPhoto text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
           </Link>
       <div onClick={() =>{  
         window.location.href=`mailto:haedarahasan69@gmail.com?`}}>
