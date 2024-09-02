@@ -6,12 +6,15 @@ import { CgScreen, CgWebsite } from "react-icons/cg";
 import { MdDraw, MdSports, MdSportsFootball, MdSportsRugby, MdStyle } from "react-icons/md";
 import photo1 from "../../assest/MyPhoto/1-removebg-preview.png";
 import Slider, { SliderMark } from "@mui/material/Slider";
-import { Box, Container, Grid, Grid2 } from "@mui/material";
+import { Box, Container, Grid, Grid2, Button } from "@mui/material";
 import { BiMusic } from "react-icons/bi";
 import { FcSportsMode } from "react-icons/fc";
 export default function Home() {
   return (
     <div className="w-full min-h-[350vh] flex flex-col items-center gap-[40px] ">
+   <Link to='https://github.com/ahmad655656/The-fourth-project/blob/main/src/files/%D9%85%D9%88%D9%82%D8%B9%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A.pdf' download={'%D9%85%D9%88%D9%82%D8%B9%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A.pdf'} >
+   <Button variant="outlined" color="inherit">Download Cv</Button>
+   </Link>
       <div className="flex flex-row sm:max-md:flex-col sm:max-md:items-center  items-center relative w-full sm:max-md:h-[100vh] min-h-[72vh]">
         <Box className="w-[40%] pl-[50px] sm:max-md:pl-0 flex flex-col items-start lg:max-xlg:items-start sm:max-md:items-center sm:max-md:w-full text-center gap-[10px] ">
           <h6 className="text-[35px] sm:max-md:text-[15px] lg:max-xlg:text-[30px] font-semibold">
