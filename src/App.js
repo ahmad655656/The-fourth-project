@@ -4,7 +4,6 @@ import About from './Pages/About/About'
 import SmallNavBar from './Sections/SmallNavBar/SmallNavBar'
 import Portfolio from './Pages/Portfolio/Portfolio'
 import Contact from './Pages/Contact/Contact';
-import Services from './Pages/Services/Services';
 import Footer from './Sections/Footer/Footer';
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/services' element={<Services />} />
         </Routes>
         <Footer />
       </Router>

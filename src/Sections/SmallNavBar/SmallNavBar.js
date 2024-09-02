@@ -93,7 +93,19 @@ function ResponsiveAppBar() {
                   <Typography sx={{ textAlign: 'center' }}>{page.name}</Typography>
                 </MenuItem>
                </Link>
+
               ))}
+              <MenuItem>
+                <div className="w-[50%] flex flex-col items-center ">
+          <Link to='sms:+963983796029'>
+          <FaSms className="text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
+          </Link>
+                  </div>
+      <div className="w-[50%] flex flex-col items-cente" onClick={() =>{  
+        window.location.href=`mailto:haedarahasan69@gmail.com?`}}>
+          <MdEmail className="text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
+        </div>
+                </MenuItem>
             </Menu>
           </Box>
           <Box sx={{ display: {xs: 'none', md: 'flex' } }}>
@@ -109,15 +121,13 @@ function ResponsiveAppBar() {
              </Link>
             ))}
           </Box>
-          <div className="max-xlg:flex sm:max-xlg:hidden flex flex-row gap-[50px] items-center w-[25%]">
-        <div className="w-[50%] flex flex-col items-center ">
+          <div className="max-xlg:flex sm:max-xlg:hidden flex flex-row gap-[50px] translate-x-[200px] items-center w-[25%]">
           <Link to='sms:+963983796029'>
-          <FaSms className="text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
+          <FaSms className="animate-animatioPhoto text-[15px] rounded-[50%] rotate-90 transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
           </Link>
-                  </div>
-      <div className="w-[50%] flex flex-col items-cente" onClick={() =>{  
+      <div onClick={() =>{  
         window.location.href=`mailto:haedarahasan69@gmail.com?`}}>
-          <MdEmail className="text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
+          <MdEmail className="animate-animatioPhoto2  text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
         </div>
             </div>
         </Toolbar>

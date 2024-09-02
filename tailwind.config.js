@@ -1,3 +1,5 @@
+const { keyframes } = require('@emotion/react')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -15,11 +17,8 @@ module.exports = {
       'lg': '1023px',
       'xlg': '1700px',
     },
-    animation:{
-      'animatioPhoto': 'a 1s 1s easy-in infinit alternate forwords',
-    },
     boxShadow:{
-      shadowVideo: '2px 2px 40px 2px'
+      shadowVideo: '2px 2px 40px 2px',
     },
     extend: {
       borderColor:{
@@ -28,6 +27,20 @@ module.exports = {
       backgroundColor: {
         'mainBackground' : '#111', 
         'smallSection': 'black',
+      },
+      animation:{
+        animatioPhoto: 'animatioPhoto  3s ease-in-out infinite 5s alternate ',
+        animatioPhoto2: 'animatioPhoto2  3s ease-in-out infinite 5s alternate ',
+      },
+      keyframes: {
+        animatioPhoto: {
+          '0%' : { transform: 'translateX(0px)' },
+          '100%' : { transform: 'translateX(100px)' },
+        },
+        animatioPhoto2: {
+          '0%' : { transform: 'translateX(0px)' },
+          '100%' : { transform: 'translateX(-100px)' },
+        },
       },
     },
   },

@@ -11,21 +11,11 @@ export const NaveBar= [
     },
     {
         id: 2,
-        link: '/potfolio',
+        link: '/portfolio',
         name: 'PORTFOLIO',
     },
     {
         id: 3,
-        link: '/services',
-        name: 'SERVICES',
-    },
-    {
-        id: 4,
-        link: '/pages',
-        name: 'PAGES',
-    },
-    {
-        id: 5,
         link: '/contact',
         name: 'CONTACT',
     },

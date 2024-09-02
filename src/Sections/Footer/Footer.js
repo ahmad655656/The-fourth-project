@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className={"w-full min-h-[70vh] flex flex-col bg-smallSection"}>
+    <div className={"z-[2] w-full min-h-[70vh] flex flex-col bg-smallSection"}>
       <div className="w-[90%] min-h-[200px] border-b-[3px] border-solid border-b-shadowColor sm:max-md:flex-wrap flex flex-row items-center justify-between mx-auto ">
         <div className="flex flex-row items-center gap-[10px] mr-[200px]">
           <img
