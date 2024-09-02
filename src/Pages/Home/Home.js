@@ -12,7 +12,7 @@ import { FcSportsMode } from "react-icons/fc";
 export default function Home() {
   return (
     <div className="w-full min-h-[350vh] flex flex-col items-center gap-[40px] ">
-   <Link to='https://github.com/ahmad655656/The-fourth-project/blob/main/src/files/%D9%85%D9%88%D9%82%D8%B9%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A.pdf' download={'%D9%85%D9%88%D9%82%D8%B9%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A.pdf'} >
+   <Link to='https://github.com/ahmad655656/The-fourth-project/blob/main/src/files/Cv.pdf' download={'Cv.pdf'} >
    <Button variant="outlined" color="inherit">Download Cv</Button>
    </Link>
       <div className="flex flex-row sm:max-md:flex-col sm:max-md:items-center  items-center relative w-full sm:max-md:h-[100vh] min-h-[72vh]">
