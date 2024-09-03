@@ -19,6 +19,8 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const phoneNumber = "+963983796029";
+  const message = "مرحبًا، أريد التحدث معك!";
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -96,7 +98,7 @@ function ResponsiveAppBar() {
               ))}
               <MenuItem>
                 <div className="w-[50%] flex flex-col items-center ">
-          <Link to='sms:+963983796029'>
+          <Link  to={`sms:${phoneNumber}?body=${encodeURIComponent(message)}`}>
           <FaSms className="text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
           </Link>
                   </div>
@@ -121,7 +123,7 @@ function ResponsiveAppBar() {
             ))}
           </Box>
           <div className="max-xlg:flex sm:max-lg:hidden flex flex-row gap-[50px] translate-x-[200px] items-center w-[25%]">
-          <Link to='sms:+963983796029'>
+          <Link to={`sms:${phoneNumber}?body=${encodeURIComponent(message)}`}>
           <FaSms className="animate-animatioPhoto text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
           </Link>
       <div onClick={() =>{  
