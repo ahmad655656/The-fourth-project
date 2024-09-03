@@ -42,6 +42,9 @@ module.exports = {
           '100%' : { transform: 'translateX(-100px)' },
         },
       },
+      boxShadow:{
+        photoShadow: '2px 2px 30px 2px',
+      }
     },
   },
   plugins: [],

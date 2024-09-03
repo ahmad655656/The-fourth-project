@@ -3,33 +3,29 @@ import React from 'react'
 import CardService from '../../Components/CardService/CardService'
 import { FiUserX } from 'react-icons/fi'
 import { CgScreen, CgWebsite } from 'react-icons/cg'
-import photo from '../../assest/MyPhoto/2-removebg-preview.png'
 import { MdStyle } from 'react-icons/md'
 
 export default function About() {
   return (
     <div className='flex flex-col items-center w-full h-full'>
-      <Box container className='flex flex-col items-center text-center pt-[100px] w-full h-[60vh]  '>
-        <Typography variant="h2" color="white">
+      <Box container className='flex flex-col items-center text-center pt-[100px] w-full h-[50vh]  '>
+        <Typography variant="h3" color="white">
           About us
         </Typography>
-        <Typography variant="h5" color="white">
-          Home / About
-        </Typography>
       </Box>
-      <Box container className='flex flex-row items-center gap-[50px] w-full h-[170vh]'>
-        <Box container className='w-[40%] h-full '>
-          <img src={photo} alt="" className='w-full h-full transition-all duration-700 ease-in hover:opacity-100 opacity-35' />
+      <Box container className='flex flex-col items-center sm:max-md:flex-col sm:max-md:w-full sm:max-md:items-center  gap-[50px] w-full min-h-[170vh]'>
+        <Box container className='w-[70%] sm:max-xlg:w-full h-full '>
+          <img src='https://media.istockphoto.com/id/517305732/photo/react-cubics.webp?s=1024x1024&w=is&k=20&c=jRKZhVky6-6tTZtnKzqoG9w4QgPkSTC-pamZdwJnq6s=' alt="" className='w-full h-full transition-all duration-700 ease-in hover:opacity-100 opacity-35' />
         </Box>
-        <Box container className='flex flex-col items-start gap-[50px] h-full w-[50%] '>
-          <Typography variant="h3" color="#ffa43b">
+        <Box container className='flex flex-col items-start text-center sm:max-xlg:items-center gap-[50px] h-full w-[70%] '>
+          <Typography variant="h4" color="#ffa43b">
           WHo we are?
           </Typography>
-          <Typography variant="h3" color="white">
+          <Typography variant="h5" color="white">
          I am a student in the College of Information Engineering in the fifth year, majoring in software engineering and information systems. I won first place in the Tartous Governorate level in the vocational secondary school in computer technology.
          </Typography>
-         <Box container className='flex flex-col items-start gap-[50px] w-full h-[100vh]'>
-        <Typography variant="h2" color="#ffa43b">My Services</Typography>
+         <Box container className='flex flex-col items-start gap-[50px] w-full min-h-[100vh]'>
+        <Typography variant="h4" color="#ffa43b">My Services</Typography>
       <Grid2 container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} className={"sm:max-md:w-full sm:max-md:p-[10px] lg:max-xlg:w-full lg:max-xlg:mr-0 w-full h-full flex flex-col items-center gap-[90px]"}>
           <Grid2 className={"flex-row items-center sm:max-md:items-center sm:max-md:w-full sm:max-md:flex-wrap lg:max-xlg:w-full lg:max-xlg:pl-[20px]  flex gap-[40px] w-full "}>
             <CardService

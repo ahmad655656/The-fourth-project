@@ -11,8 +11,8 @@ export const NaveBar= [
     },
     {
         id: 2,
-        link: '/portfolio',
-        name: 'PORTFOLIO',
+        link: '/projects',
+        name: 'PROJECTS',
     },
     {
         id: 3,

@@ -9,38 +9,31 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import photo from '../../assest/MyPhoto/10-removebg-preview.png'
 import { NaveBar } from "../../Data";
 import { Link } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
 import { FaSms } from "react-icons/fa";
 
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const phoneNumber = "963938759505";
+  const phoneNumber = "963983796029";
   const message = "مرحبًا، أريد التحدث معك!";
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
     <AppBar
       sx={{ background: "none", width: "100%", padding: "0px" }}
       position="static"
+      className="sm:max-md:h-[100px]"
     >
       <Container
         maxWidth="x"
@@ -64,9 +57,7 @@ function ResponsiveAppBar() {
         >
           <div className="flex flex-row items-center gap-[10px]">
             <img
-              src={
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqfacCQhC3h6m9skEvWk75mx4YV2_GxYJNfw&s"
-              }
+              src={photo}
               alt=""
               className="rounded-[50%] w-[70px] h-[70px] sm:max-md:w-[50px] sm:max-md:h-[50px] lg:max-xlg:w-[60px] lg:max-xlg:h-[60px] "
             />
@@ -155,16 +146,16 @@ function ResponsiveAppBar() {
               </Link>
             ))}
           </Box>
-          <div className="max-xlg:flex sm:max-lg:hidden flex flex-row gap-[50px] translate-x-[200px] items-center w-[25%]">
+          <div className="max-xlg:flex sm:max-lg:hidden flex flex-row gap-[50px] mr-[50px] translate-x-[200px] items-center w-[25%]">
             <Link to={`sms:${phoneNumber}?body=${encodeURIComponent(message)}`}>
-              <FaSms className="animate-animatioPhoto text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
+              <FaSms className="animate-animatioPhoto text-[15px]  rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] lg:max-xlg:w-[50px] lg:max-xlg:h-[50px]  text-mainTextColor" />
             </Link>
             <div
               onClick={() => {
                 window.location.href = `mailto:haedarahasan69@gmail.com?`;
               }}
             >
-              <MdEmail className="animate-animatioPhoto2  text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] text-mainTextColor" />
+              <MdEmail className="animate-animatioPhoto2  text-[15px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] lg:max-xlg:w-[50px] lg:max-xlg:h-[50px]  text-mainTextColor" />
             </div>
           </div>
         </Toolbar>
