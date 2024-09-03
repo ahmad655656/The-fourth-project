@@ -11,10 +11,7 @@ import { BiMusic } from "react-icons/bi";
 import { FcSportsMode } from "react-icons/fc";
 export default function Home() {
   return (
-    <div className="w-full min-h-[350vh] flex flex-col items-center gap-[40px] ">
-   <Link to='https://github.com/ahmad655656/The-fourth-project/blob/main/src/files/Cv.pdf' download={'Cv.pdf'} >
-   <Button variant="outlined" color="inherit">Download Cv</Button>
-   </Link>
+    <div className=" w-full min-h-[350vh] flex flex-col items-center gap-[40px] ">
       <div className="flex flex-row sm:max-md:flex-col sm:max-md:items-center  items-center relative w-full sm:max-md:h-[100vh] min-h-[72vh]">
         <Box className="w-[40%] pl-[50px] sm:max-md:pl-0 flex flex-col items-start lg:max-xlg:items-start sm:max-md:items-center sm:max-md:w-full text-center gap-[10px] ">
           <h6 className="text-[35px] sm:max-md:text-[15px] lg:max-xlg:text-[30px] font-semibold">
@@ -24,6 +21,9 @@ export default function Home() {
             Front-End Devloper
           </h2>
           <h4 className="text-[40px] lg:max-xlg:text-[30px] sm:max-md:text-[25px]">React Js</h4>
+          <Button onClick={() =>{
+            window.location.href = ''
+          }} variant="outlined" color="inherit">Download Cv</Button>
         </Box>
         <Container className="w-[50%] sm:max-lg:after:h-0 sm:max-lg:before:h-0 sm:max-lg:before:w-0 sm:max-lg:after:w-0 after:transition-all after:duration-1000  after:absolute after:bg-mainTextColor after:w-[50%] after:h-[50%] after:left-[785px] max-xlg:after:left-[628px] after:mix-blend-soft-light after:z-[1] after:top-0 before:absolute before:bg-mainTextColor max-xlg:before:w-[27%] before:w-[22.9%] before:h-full before:left-[1340px] max-xlg:before:left-[1000px] before:mix-blend-multiply before:z-[1] before:top-0 h-full">
           <img
