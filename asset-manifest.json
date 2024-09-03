@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/The-fourth-project/static/css/main.849419e3.css",
-    "main.js": "/The-fourth-project/static/js/main.81097f52.js",
+    "main.js": "/The-fourth-project/static/js/main.6dfec12f.js",
     "static/js/453.68693753.chunk.js": "/The-fourth-project/static/js/453.68693753.chunk.js",
     "static/media/2-removebg-preview.png": "/The-fourth-project/static/media/2-removebg-preview.8d523aa232e273b3f18f.png",
     "static/media/1-removebg-preview.png": "/The-fourth-project/static/media/1-removebg-preview.6ac3df5581bc2504fa22.png",
     "index.html": "/The-fourth-project/index.html",
     "main.849419e3.css.map": "/The-fourth-project/static/css/main.849419e3.css.map",
-    "main.81097f52.js.map": "/The-fourth-project/static/js/main.81097f52.js.map",
+    "main.6dfec12f.js.map": "/The-fourth-project/static/js/main.6dfec12f.js.map",
     "453.68693753.chunk.js.map": "/The-fourth-project/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.849419e3.css",
-    "static/js/main.81097f52.js"
+    "static/js/main.6dfec12f.js"
   ]
 }
