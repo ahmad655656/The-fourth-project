@@ -34,15 +34,15 @@ export default function Home() {
             Download Cv
           </button>
         </Box>
-        <div className="lg:skew-custom">
+        <div className="lg:skew-custom skew-custom">
           <img
             src={photo1}
             alt=""
-            className="w-[40%] rounded-[40px] sm:max-md:ml-[35px] sm:max-md:w-[80%] mt-[50px] sm:max-md:h-[610px] ml-[400px] z-[3] m-auto h-[650px] "
+            className="w-[40%] rounded-[40px] sm:max-md:border-b-[2px] sm:max-md:border-solid sm:max-md:ml-[35px] sm:max-md:w-[90%]  sm:max-md:mt-[50px] sm:max-md:z-[-1] mt-[50px] sm:max-md:h-[83%] ml-[400px] z-[3] m-auto h-[650px] "
           />
         </div>
       </div>
-      <div className="flex flex-row sm:max-md:flex sm:max-md:flex-wrap lg:max-xlg:flex-wrap lg:max-xlg:gap-[40px]  sm:max-md:gap-[40px] sm:max-md:p-[30px] sm:max-md:items-center sm:max-md:w-full sm:max-md:min-h-[260vh] h-[175vh] bg-smallSection w-full items-center">
+      <div className="flex flex-row sm:max-md:flex sm:max-md:flex-wrap lg:max-xlg:flex-wrap lg:max-xlg:gap-[40px]  sm:max-md:gap-[40px] sm:max-md:p-[30px] sm:max-md:items-center sm:max-md:w-full sm:min-h-[200vh] md:min-h-[102vh] lg:h-[175vh] bg-smallSection w-full items-center">
         <div className="pl-[60px] sm:max-md:pl-[20px] sm:max-md:w-[90%] sm:max-md:gap-[20px] lg:max-xlg:items-center lg:max-xlg:w-full w-[30%] gap-[40px] flex-col items-center">
           <h6 className="text-[30px] sm:max-md:text-[20px] sm:max-md:text-center sm:max-md:w-full  lg:max-xlg:text-[25px] text-mainTextColor ">
             Our Services
@@ -66,7 +66,7 @@ export default function Home() {
           rowSpacing={1}
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
           className={
-            "sm:max-md:w-full pl-[40px] pr-[70px] sm:max-md:px-0 sm:max-md:p-[10px] sm:max-md:pr-0 lg:max-xlg:w-full lg:max-xlg:mr-0 w-[70%] sm:max-md:h-[88%] h-[50%] flex flex-col items-center gap-[50px]"
+            "sm:max-md:w-full pl-[40px] pr-[70px] sm:max-md:px-0 sm:max-md:p-[10px] sm:max-md:pr-0 lg:max-xlg:w-full lg:max-xlg:mr-0 w-[70%] sm:max-md:h-[88%]  h-[50%] flex flex-col items-center gap-[50px]"
           }
         >
           <Grid2
@@ -121,14 +121,12 @@ export default function Home() {
           }
         >
           <Box className="flex flex-row flex-wrap gap-[60px] px-[70px] sm:max-md:px-[20px] items-center sm:max-lg:w-full w-full min-h-[100vh] ">
-            <Link to="/projectdetails">
               <iframe
-                className="rounded-[40px] min-h-[40vh] w-[250px] sm:max-md:w-[332px] transition-all duration-1000 ease-in-out hover:border-b-[2px] border-solid border-b-mainTextColor"
+                className="rounded-[40px] min-h-[40vh] w-[250px] sm:max-md:w-[350px] sm:max-md:m-auto transition-all duration-1000 ease-in-out hover:border-b-[2px] border-solid border-b-mainTextColor"
                 src="https://www.youtube.com/embed/hw49S2kxssI?si=qGqAxTNs5Pz1JJgw"
                 allow="accelerometer; autoplay; gyroscope; web-share; clipboard-write; picture-in-picture; encrypted-media"
                 allowFullScreen
               ></iframe>
-            </Link>
             <iframe
               className="rounded-[40px]  min-h-[40vh] w-[250px] transition-all sm:max-md:w-[350px] sm:max-md:m-auto duration-1000 ease-in-out hover:border-b-[2px] border-solid border-b-mainTextColor"
               src={"https://youtube.com/embed/kZ5NBmCZAss?si=mGUAZQhKOy7OcUtZ"}

@@ -2,23 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
+    @media (min-width: 1200px) {
+        .skew-custom{
+            width: 50%;
+            position: relative;
+            border-radius: 40px;
+            height: 70%;
+        }
+      .skew-custom::after {
+        content: '';
+        width: 48%;
+        position: absolute;
+        bottom: 0;
+        border-radius: 50%;
+        top: 194px;
+        right: 0;
+        height: 3.5%;
+        border-top: dashed 1px #00FFFF;
+        transform: translate(66px, 100px) rotate(659deg) skew(-92deg, -235deg) scale(0.9);
+        box-shadow: 4px -3px 0.5px 1px #1B1F24;
+    }
+    }
+@media (min-width: 200px) and (max-width: 400px) {
+    .skew-custom::after {
+        display: none;
+    }
     .skew-custom{
-        width: 50%;
+        width: 100%;
+        position: relative;
+        border-radius: 40px;
+        margin: auto;
+        padding-right: 26px;
+        height: 70%;
+    }
+}
+@media (min-width: 401px) and (max-width: 768px) {
+    .skew-custom::after {
+        display: none;
+    }
+    .skew-custom{
+        width: 100%;
         position: relative;
         border-radius: 40px;
         height: 70%;
+        margin: auto;
+        padding-right: 26px;
     }
-  .skew-custom::after {
-    content: '';
-    width: 48%;
-    position: absolute;
-    bottom: 0;
-    border-radius: 50%;
-    top: 194px;
-    right: 0;
-    height: 3.5%;
-    border-top: dashed 1px #00FFFF;
-    transform: translate(66px, 100px) rotate(659deg) skew(-92deg, -235deg) scale(0.9);
-    box-shadow: 4px -3px 0.5px 1px #1B1F24;
 }
 }
