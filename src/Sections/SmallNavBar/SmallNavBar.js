@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
           width: "100%",
           gap: "100px",
           padding: "0",
-          height: "200px",
+          height: "109px",
           display: "flex",
           flexDirection: "row",
         }}
@@ -64,7 +64,7 @@ function ResponsiveAppBar() {
             <div className="flex flex-col items-center pt-[10px]">
               <h2 className="sm:max-md:text-[15px] lg:max-xlg:text-[20px] font-black text-[30px] text-white">
                 HAERDARA
-                <span className="sm:max-md:text-[15px] lg:max-xlg:text-[18px] text-[25px] font-black text-[#ffa43b]">
+                <span className="sm:max-md:text-[15px] lg:max-xlg:text-[18px] text-[25px] font-black text-mainTextColor">
                   SALLOUM
                 </span>
               </h2>

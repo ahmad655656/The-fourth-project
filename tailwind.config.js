@@ -5,11 +5,13 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors:{
-      'mainTextColor': '#ffa43b',
-      'secondTextColor': '#fff',
+      'mainTextColor': '#00FFFF',
+      'secondTextColor': '#ffffff',
       'theardTextColor': '#000',
       'shadowColor': '#444',
       'afterVideo': '#444',
+      'hoverButton': ' #00CED1',
+      'hoverText': '#0A0A0A',
     },
     screens:{
       'sm': '208px',
@@ -20,13 +22,15 @@ module.exports = {
     boxShadow:{
       shadowVideo: '2px 2px 40px 2px',
     },
+   
     extend: {
       borderColor:{
         'BottomNavBar': 'rgba(255, 255, 255, 0.1)',
       },
       backgroundColor: {
-        'mainBackground' : '#111', 
+        'mainBackground' : '#1B1F24', 
         'smallSection': 'black',
+        'bgButton': '#00FFFF',
       },
       animation:{
         animatioPhoto: 'animatioPhoto  3s ease-in-out infinite 5s alternate ',

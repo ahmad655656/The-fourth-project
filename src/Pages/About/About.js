@@ -17,16 +17,16 @@ export default function About() {
         <Box container className='w-[70%] sm:max-xlg:w-full h-full '>
           <img src='https://media.istockphoto.com/id/517305732/photo/react-cubics.webp?s=1024x1024&w=is&k=20&c=jRKZhVky6-6tTZtnKzqoG9w4QgPkSTC-pamZdwJnq6s=' alt="" className='w-full h-full transition-all duration-700 ease-in hover:opacity-100 opacity-35' />
         </Box>
-        <Box container className='flex flex-col items-start text-center sm:max-xlg:items-center gap-[50px] h-full w-[70%] '>
-          <Typography variant="h4" color="#ffa43b">
+        <Box container className='flex flex-col items-start text-center sm:max-xlg:items-center gap-[50px] h-full w-[90%] '>
+          <Typography variant="h4" color="#00FFFF">
           WHo we are?
           </Typography>
           <Typography variant="h5" color="white">
          I am a student in the College of Information Engineering in the fifth year, majoring in software engineering and information systems. I won first place in the Tartous Governorate level in the vocational secondary school in computer technology.
          </Typography>
-         <Box container className='flex flex-col items-start gap-[50px] w-full min-h-[100vh]'>
-        <Typography variant="h4" color="#ffa43b">My Services</Typography>
-      <Grid2 container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} className={"sm:max-md:w-full sm:max-md:p-[10px] sm:max-md:pb-[20px] lg:max-xlg:w-full lg:max-xlg:mr-0 w-full h-full flex flex-col items-center gap-[90px]"}>
+         <Box container className='flex flex-col items-start sm:max-md:items-center gap-[50px] w-full min-h-[100vh]'>
+        <Typography variant="h4" color="#00FFFF">My Services</Typography>
+      <Grid2 container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} className={"sm:max-md:w-full sm:max-md:p-[10px] lg:max-xlg:w-full lg:max-xlg:mr-0 w-full h-full flex flex-col items-center gap-[90px]"}>
           <Grid2 className={"flex-row items-center sm:max-md:items-center sm:max-md:w-full sm:max-md:flex-wrap lg:max-xlg:w-full lg:max-xlg:pl-[20px]  flex gap-[40px] w-full "}>
             <CardService
               title={"Modify the code"}

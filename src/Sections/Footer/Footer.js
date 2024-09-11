@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className={"z-[2] w-full min-h-[70vh] flex flex-col bg-smallSection"}>
-      <div className="w-[90%] min-h-[200px] border-b-[3px] border-solid border-b-shadowColor sm:max-md:flex-wrap flex flex-row items-center justify-between mx-auto ">
+    <div className={"z-[2] w-full sm:max-md:h-[90vh] min-h-[60vh] flex flex-col bg-smallSection"}>
+      <div className="w-[90%] min-h-[200px] border-b-[1.5px] border-solid border-b-shadowColor sm:max-md:flex-wrap flex flex-row items-center justify-between mx-auto ">
         <div className="flex flex-row items-center gap-[10px] mr-[200px]">
           <img
             src={
@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="flex flex-col items-center pt-[10px]">
             <h2 className="sm:max-md:text-[12px] lg:max-xlg:text-[17px] font-black text-[25px] text-white">
               HAERDARA
-              <span className="sm:max-md:text-[12px] lg:max-xlg:text-[15px] text-[20px] font-black text-[#ffa43b]">
+              <span className="sm:max-md:text-[12px] lg:max-xlg:text-[15px] text-[20px] font-black text-mainTextColor">
                 SALLOUM
               </span>
             </h2>
@@ -29,25 +29,25 @@ export default function Footer() {
         </div>
         <div className="flex flex-row gap-[20px]">
           <Link to="https://www.facebook.com/HaedaraSalloum" >
-          <FaFacebook className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
+          <FaFacebook className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[40px] h-[40px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
           </Link>
           <Link to="https://wa.me/963984906541">
-          <FaWhatsapp className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
+          <FaWhatsapp className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[40px] h-[40px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
           </Link>
           <Link to='https://youtube.com/@haedarahasan8374?si=fvg1LPRpaRGoJvBG'>
-          <FaYoutube className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
+          <FaYoutube className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[40px] h-[40px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
           </Link>
             <Link to="https://t.me/+963983796029">
-            <FaTelegram className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[60px] h-[60px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
+            <FaTelegram className="text-[15px] sm:max-md:text-[10px] rounded-[50%] transition-all duration-500 ease-in-out cursor-pointer hover:text-[#111] hover:bg-mainTextColor border-[2px] border-solid border-BottomNavBar p-[10px] w-[40px] h-[40px] sm:max-md:w-[40px] sm:max-md:h-[40px] text-mainTextColor" />
             </Link>
         </div>
       </div>
-      <Box className={"flex flex-row w-[90%] m-auto "}>
-        <div className="w-[50%] flex pb-[50px] pt-[50px] flex-col gap-[40px] items-start">
+      <Box className={"flex flex-row sm:max-md:flex-col sm:max-md:items-center justify-between w-[90%] sm:max-md:gap-[20px] m-auto "}>
+        <div className="w-[50%] sm:max-md:w-full flex flex-col gap-[20px] items-center">
           <h2 className="text-mainTextColor sm:max-md:text-[20px] text-[30px] font-black ">
             About us
           </h2>
-          <h5 className="opacity-30 text-[20px] sm:max-md:text-[10px] font-black text-secondTextColor ">
+          <h5 className="opacity-30 text-[20px] text-center w-[60%] sm:max-md:text-[10px] font-black text-secondTextColor ">
             I am a student in the College of Information Engineering in the
             fifth year, majoring in software engineering and information
             systems.
@@ -58,16 +58,17 @@ export default function Footer() {
           </Button>
           </Link>
         </div>
-        <div className="w-[50%] flex flex-col  pb-[50px] pt-[50px]  gap-[40px] items-start">
+        <div className="w-[50%] sm:max-md:w-full flex flex-col gap-[20px] items-center">
           <h2 className="text-mainTextColor text-[30px] sm:max-md:text-[20px] font-black ">
             Newsletter
           </h2>
-          <h5 className="opacity-30 text-[20px] font-black sm:max-md:text-[10px] text-secondTextColor ">
+          <h5 className="opacity-30 text-[20px] text-center w-[60%] font-black sm:max-md:text-[10px] text-secondTextColor ">
             My main task is to design a complete website that is responsive to
             all devices It is certain that there will be new developments, God
             willing
           </h5>
         </div>
+        <div></div>
       </Box>
     </div>
   );

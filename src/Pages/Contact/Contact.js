@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Button } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import emailjs from 'emailjs-com'
 
 export default function Example() {
@@ -33,14 +33,11 @@ export default function Example() {
 
   return (
     <div className="px-6 py-24 bg-white sm:py-32 lg:px-8">
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-      >
-      </div>
-      <div className="mx-auto text-center">
-        <h2 className="text-[50px] font-bold tracking-tight text-gray-900 sm:text-4xl">Contact us</h2>
-      </div>
+      <Box container className='flex flex-col items-center pt-[0px] w-full h-[30vh]  '>
+        <Typography variant="h2" color="white">
+          Contact us
+        </Typography>
+      </Box>
       <form onSubmit={handleSubmit} className="w-[700px] sm:max-md:w-[300px] mx-auto mt-16 sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
@@ -126,12 +123,12 @@ export default function Example() {
           </div>
         </div>
         <div className="mt-10">
-          <Button 
+          <button 
             type="submit"
-            className="block w-full rounded-md bg-theardTextColor px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-mainTextColor hover:text-theardTextColor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theardTextColor"
+            className="block w-full rounded-md bg-theardTextColor px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-mainTextColor hover:text-theardTextColor focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition-all duration-500 ease-in-out focus-visible:outline-theardTextColor"
           >
             Let's talk
-          </Button>
+          </button>
         </div>
       </form>
     </div>
