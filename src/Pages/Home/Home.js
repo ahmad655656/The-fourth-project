@@ -25,7 +25,7 @@ export default function Home() {
           </h2>
           <p className="text-[16px] sm:max-md:w-[80%] text-left sm:max-md:text-center">Transforming data into digital experiences, designing professional websites with all their details.</p>
           <a
-          href ="/Files/cv.docx"
+          href ="https://ahmad655656.github.io/The-fourth-project/files/cv.docx"
           download
             className="transition-all duration-500 ease-linear p-[10px] rounded-[5px] text-afterVideo bg-bgButton hover:bg-hoverButton"
           >
