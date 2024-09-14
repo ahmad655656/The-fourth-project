@@ -24,15 +24,13 @@ export default function Home() {
           Front-End Devloper React Js
           </h2>
           <p className="text-[16px] sm:max-md:w-[80%] text-left sm:max-md:text-center">Transforming data into digital experiences, designing professional websites with all their details.</p>
-          <button
-            onClick={() => {
-              window.location.href =
-                "https://github.com/ahmad655656/The-fourth-project/blame/main/src/files/cv.docx";
-            }}
+          <a
+          href ="/Files/cv.docx"
+          download
             className="transition-all duration-500 ease-linear p-[10px] rounded-[5px] text-afterVideo bg-bgButton hover:bg-hoverButton"
           >
             Download Cv
-          </button>
+          </a>
         </Box>
         <div className="lg:skew-custom skew-custom">
           <img
@@ -172,7 +170,7 @@ export default function Home() {
         <h2 className="ml-[40px] sm:max-md:ml-[20px] text-center text-[40px] lg:max-xlg:text-[35px] sm:max-md:text-[30px] font-black text-mainTextColor">
           Skills
         </h2>
-        <div className="flex flex-row items-center bg-theardTextColor w-full sm:max-md:items-center ">
+        <div className="flex flex-row items-center w-full bg-theardTextColor sm:max-md:items-center ">
           <Box className="flex  justify-between flex-row sm:max-md:flex sm:max-md:w-[90%] sm:max-md:flex-wrap sm:max-md:items-center sm:max-md:pl-[10px]  items-center w-full h-full sm:max-md:mt-[10px] mt-[100px] px-[70px] ">
             <div
             className='w-[26%] sm:max-md:w-full flex flex-col items-center '
