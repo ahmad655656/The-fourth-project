@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className={"z-[2] w-full sm:max-md:h-[90vh] min-h-[60vh] flex flex-col bg-smallSection"}>
+    <div className={"z-[2] w-full pb-[20px] sm:max-md:h-[90vh] min-h-[60vh] flex flex-col bg-smallSection"}>
       <div className="w-[90%] min-h-[200px] border-b-[1.5px] border-solid border-b-shadowColor sm:max-md:flex-wrap flex flex-row items-center justify-between mx-auto ">
         <div className="flex flex-row items-center gap-[10px] mr-[200px]">
           <img
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
       </div>
       <Box className={"flex flex-row sm:max-md:flex-col sm:max-md:items-center justify-between w-[90%] sm:max-md:gap-[20px] m-auto "}>
-        <div className="w-[50%] sm:max-md:w-full flex flex-col gap-[20px] items-center">
+        <div className="w-[50vw] sm:max-md:w-[100vw] flex flex-col gap-[20px] items-center">
           <h2 className="text-mainTextColor sm:max-md:text-[20px] text-[30px] font-black ">
             About us
           </h2>
@@ -58,7 +58,7 @@ export default function Footer() {
           </Button>
           </Link>
         </div>
-        <div className="w-[50%] sm:max-md:w-full flex flex-col gap-[20px] items-center">
+        <div className="w-[50vw] sm:max-md:w-[100vw] flex flex-col gap-[20px] items-center">
           <h2 className="text-mainTextColor text-[30px] sm:max-md:text-[20px] font-black ">
             Newsletter
           </h2>

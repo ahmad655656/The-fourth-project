@@ -50,3 +50,17 @@
     }
 }
 }
+@layer components {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+  }
+  #root{
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
