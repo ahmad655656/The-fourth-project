@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/The-fourth-project/static/css/main.887a35a7.css",
-    "main.js": "/The-fourth-project/static/js/main.5b0c668c.js",
+    "main.css": "/The-fourth-project/static/css/main.c4fa99bf.css",
+    "main.js": "/The-fourth-project/static/js/main.ec2b781c.js",
     "static/js/453.68693753.chunk.js": "/The-fourth-project/static/js/453.68693753.chunk.js",
     "static/media/10-removebg-preview.png": "/The-fourth-project/static/media/10-removebg-preview.d3f62eb50434843e64bb.png",
     "static/media/1-removebg-preview.png": "/The-fourth-project/static/media/1-removebg-preview.6ac3df5581bc2504fa22.png",
     "index.html": "/The-fourth-project/index.html",
-    "main.887a35a7.css.map": "/The-fourth-project/static/css/main.887a35a7.css.map",
-    "main.5b0c668c.js.map": "/The-fourth-project/static/js/main.5b0c668c.js.map",
+    "main.c4fa99bf.css.map": "/The-fourth-project/static/css/main.c4fa99bf.css.map",
+    "main.ec2b781c.js.map": "/The-fourth-project/static/js/main.ec2b781c.js.map",
     "453.68693753.chunk.js.map": "/The-fourth-project/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.887a35a7.css",
-    "static/js/main.5b0c668c.js"
+    "static/css/main.c4fa99bf.css",
+    "static/js/main.ec2b781c.js"
   ]
 }
